@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+node_modules/
+*.ckpt
+*.safetensors
+data/raw/
+data/processed/
