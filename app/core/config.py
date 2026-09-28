@@ -1,4 +1,4 @@
-﻿from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     database_url: str = ""
     vector_db_path: str = "./data/vector_store"
     llm_model_path: str = ""
+    llm_model_name: str = "llama3.2:3b"
+    verifier_model_name: str = "llama3.2:3b"
     ncbi_api_key: str = ""
     wandb_api_key: str = ""
 

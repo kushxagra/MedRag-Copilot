@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What are the first-line treatment options for hypertension?",
+    "reference": "First-line treatments for hypertension typically include lifestyle modification alongside antihypertensive medications such as ACE inhibitors, ARBs, calcium channel blockers, and thiazide diuretics."
+  },
+  {
+    "question": "What lifestyle changes are recommended for managing high blood pressure?",
+    "reference": "Recommended lifestyle changes for managing high blood pressure include reducing sodium intake, regular physical activity, weight management, limiting alcohol, and stress reduction."
+  },
+  {
+    "question": "Is there a relationship between depression and type 2 diabetes?",
+    "reference": "Depression and anxiety are highly prevalent among adults with type 2 diabetes and are associated with impaired treatment adherence, worse glycemic control, and increased mortality risk."
+  },
+  {
+    "question": "How does psychological distress affect glycemic control in diabetes patients?",
+    "reference": "Psychological distress, including stress, anxiety, and depression, has been significantly associated with variation in HbA1c levels and worse glycemic control among diabetes patients."
+  },
+  {
+    "question": "What are common triggers for asthma exacerbations?",
+    "reference": "Common asthma triggers include allergens, respiratory infections, air pollution, exercise, cold air, and exposure to irritants such as smoke."
+  },
+  {
+    "question": "How is asthma typically managed?",
+    "reference": "Asthma is typically managed with inhaled corticosteroids for long-term control and short-acting bronchodilators for acute symptom relief, alongside trigger avoidance."
+  },
+  {
+    "question": "Why is antibiotic resistance a growing concern in treating bacterial infections?",
+    "reference": "Antibiotic resistance occurs when bacteria evolve mechanisms to survive drugs designed to kill them, making infections harder to treat and increasing the risk of severe illness and spread."
+  },
+  {
+    "question": "How are bacterial infections typically diagnosed?",
+    "reference": "Bacterial infections are typically diagnosed through clinical evaluation combined with laboratory tests such as cultures, blood tests, or molecular diagnostics to identify the causative organism."
+  },
+  {
+    "question": "What are common treatment approaches for depression?",
+    "reference": "Common treatment approaches for depression include psychotherapy, antidepressant medications such as SSRIs, and in some cases combination therapy or lifestyle interventions."
+  },
+  {
+    "question": "How does depression affect physical health outcomes in patients with chronic illness?",
+    "reference": "Depression in patients with chronic illness is associated with worse treatment adherence, poorer disease control, and increased risk of complications and mortality."
+  }
+]

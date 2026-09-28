@@ -1,19 +1,25 @@
 ﻿import logging
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
+from app.api.ask import router as ask_router
 from app.core.config import settings
 from app.core.logging import configure_logging
 
 configure_logging()
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title=settings.app_name, version="0.1.0")
 
-
-@app.on_event("startup")
-def on_startup() -> None:
+@asynccontextmanager
+async def lifespan(app: FastAPI):
     logger.info("MedRAG Copilot starting up")
+    yield
+    logger.info("MedRAG Copilot shutting down")
+
+
+app = FastAPI(title=settings.app_name, version="0.1.0", lifespan=lifespan)
+app.include_router(ask_router)
 
 
 @app.get("/health")

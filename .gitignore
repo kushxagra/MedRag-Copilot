@@ -7,3 +7,8 @@ node_modules/
 *.safetensors
 data/raw/
 data/processed/
+
+# Fine-tuning artifacts - large binaries, not suitable for git
+*.gguf
+finetuning/merged/
+finetuning/adapter/checkpoints/

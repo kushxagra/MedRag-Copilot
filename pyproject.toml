@@ -6,11 +6,18 @@ authors = [
     {name = "kushxagra",email = "kdwivedi1405@gmail.com"}
 ]
 license = "MIT"
-requires-python = ">=3.13"
+requires-python = ">=3.13,<4.0"
 dependencies = [
     "fastapi (>=0.141.1,<0.142.0)",
     "uvicorn (>=0.52.4,<0.53.0)",
-    "pydantic-settings (>=2.15.0,<3.0.0)"
+    "pydantic-settings (>=2.15.0,<3.0.0)",
+    "biopython (>=1.88,<2.0)",
+    "sentence-transformers (>=6.0.0,<7.0.0)",
+    "chromadb (>=1.5.9,<2.0.0)",
+    "ollama (>=0.6.2,<0.7.0)",
+    "ragas (>=0.4.3,<0.5.0)",
+    "langchain-ollama (>=1.1.0,<2.0.0)",
+    "langchain-community (<0.4.2)"
 ]
 [tool.poetry]
 package-mode = false
@@ -29,3 +36,6 @@ dev = [
 ]
 [tool.pytest.ini_options]
 pythonpath = ["."]
+
+[tool.isort]
+profile = "black"
