@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8001:8000"
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./evaluation:/app/evaluation
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

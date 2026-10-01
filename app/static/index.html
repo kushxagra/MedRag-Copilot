@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MedRAG Copilot</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="shell" id="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <span class="sidebar-title">Conversations</span>
+        <button type="button" class="new-chat-btn" id="new-chat-btn">+ New</button>
+      </div>
+      <ul class="conversation-list" id="conversation-list"></ul>
+    </aside>
+
+    <div class="sidebar-backdrop" id="sidebar-backdrop" hidden></div>
+
+    <div class="app">
+      <header class="app-top">
+        <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle conversations">&#9776;</button>
+        <span class="dot" id="status-dot"></span>
+        <strong>MedRAG Copilot</strong>
+        <span class="model-tag">local &middot; llama3.2:3b</span>
+      </header>
+
+      <main class="chat" id="chat">
+        <div class="empty-state" id="empty-state">
+          <p>Ask a question about the corpus:</p>
+          <ul>
+            <li>Hypertension</li>
+            <li>Diabetes</li>
+            <li>Asthma</li>
+            <li>Bacterial infections</li>
+            <li>Depression</li>
+          </ul>
+        </div>
+      </main>
+
+      <form class="composer" id="composer">
+        <input
+          type="text"
+          id="question-input"
+          placeholder="Ask a question about the corpus&hellip;"
+          aria-label="Question"
+          autocomplete="off"
+        >
+        <button type="submit" id="send-btn">Ask</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

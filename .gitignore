@@ -12,3 +12,5 @@ data/processed/
 *.gguf
 finetuning/merged/
 finetuning/adapter/checkpoints/
+
+logs/

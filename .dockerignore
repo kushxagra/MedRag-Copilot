@@ -1,0 +1,16 @@
+.venv
+__pycache__
+*.pyc
+.git
+.gitignore
+.env
+data
+finetuning
+*.gguf
+*.safetensors
+logs
+evaluation
+.pytest_cache
+.mypy_cache
+.ruff_cache
+*.egg-info
